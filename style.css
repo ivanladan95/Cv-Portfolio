@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ :root {
+    --blue-text: #86ddff;
+    --dark-blue: #002b8f;
+    --mid-blue: #3ba0ff;
+ }
+
+
+ html {
+    font-family:'Courier New', Courier, monospace     
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+
+/* NAVBAR SECTION*/
+#mobile-nav {
+   display: none;
+ }
+
+ .nav-bar{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+ }
+
+ ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    list-style: none;
+    height: 10vh;
+    background-color: rgba(209, 204, 204, 0.2);
+ }
+
+ li a {
+    display: block;
+    color: #fff;
+    text-decoration: none; 
+    font-size: 1.5rem 
+ }
+
+ #name {
+    color: var(--blue-text);
+    font-size: 30px;
+    font-weight: bold;
+ }
+
+ /* HERO SECTION */ 
+
+ .container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+ }
+
+ .image-container {
+    position: relative;
+    background-image: url("blue.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;   
+ }
+
+
+ .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.4);
+    z-index: 1;
+ }
+
+ .hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2;
+ }
+  .firstWord {
+    color: var(--blue-text);
+}
+
+.resume-cta {
+    border: 2px solid var(--blue-text);
+    width: 145px;
+    padding: 25px;
+    margin-top: 15px;
+}
+
+.resume-text {
+    color: #fff;
+
+}
+
+.resume-cta:hover {
+    background-color: rgba(100, 100, 100, 0.4);
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+   #nav {
+      display: none;
+   }
+
+#mobile-nav {
+   display: block;
+}   
+
+.mobile-nav-bar {
+   width: 100%;
+   position: fixed;
+   z-index: 5;  
+}
+
+ul {
+   background-color: rgba(32, 23, 23, 0.625);
+}
+
+
+.social-icons i {
+   font-size: 2rem;
+   padding: 10px;
+   margin-left: -10px;
+   
+   
+}
+
+
+}
+   
+
+
+
+
+
+
+
+
+
+ 
+
+
+   
